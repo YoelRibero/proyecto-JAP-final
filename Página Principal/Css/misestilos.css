@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  padding: 0 0;
+  background: #333;
+  margin-bottom: 40px;
+
+  background: url(Img/logo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@font-face{
+  font-family: "WalterTurncoat";
+  src: url(Fonts/WalterTurncoat-Regular.ttf);
+}
+.contenedor{
+  width: 90%;
+  max-width: 1200;
+  margin: auto;
+}
+header .navegador{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navegador .nombre-empresa{
+  padding: 25px 0;
+}
+header .navegador .nombre-empresa h1{
+  font-size: 65px;
+  color: #9D69A3;
+  font-family: WalterTurncoat;
+  font-weight: normal;
+  transition: all .1s ease;
+}
+header .navegador .nombre-empresa h1:hover{
+  transform: scale(1.2,1.2);
+}
+input{
+  width: 200px;
+  height: 40px;
+  float: left;
+  border-radius: 5px;
+  color: #9D69A3;
+  font-family: WalterTurncoat;
+}
+button{
+  font-size: 2em;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #333;
+}
+.fa-search{
+  color: #9D69A3;
+}
+input:focus{
+  outline: none;
+}
+header .navegador .ing-reg a{
+  margin-left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: WalterTurncoat;
+  color: #9D69A3;
+  padding-bottom: 6px;
+  transition: all .3s ease;
+  border-bottom: 2px solid transparent;
+}
+header .navegador .ing-reg a:hover{
+  border-bottom: 2px solid rgba(255,255,255,.7)
+}
+
+.main .contenedor{
+  background: #ddd;
+  padding: 20px;
+}
+.main .articulos{
+  padding: 15px;
+  border: 2px solid #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  transition: all .5s ease;
+}
+.main .articulos:hover{
+  background: #FF4D80;
+}
+.main .articulos > p{
+  color: #fff;
+}
+.main .articulos .titulo{
+  font-size: 30px;
+  margin: 20px 0;
+  color: #fff;
+  font-family: WalterTurncoat;
+}
+.main .articulos p{
+  font-size: 17px;
+  line-height: 25px;
+  font-family: WalterTurncoat;
+  color: #413C3C;
+}
+.main .ventas{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+} 
+.main .ventas .titulo{
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 30px;
+  font-family: WalterTurncoat;
+}
+.main .ventas .mueble{
+  width: 30%;
+  background: #4C3549;
+  transition: all .3s ease;
+  border: 2px solid #000;
+}
+.main .ventas .mueble:hover{
+  transform: scale(1.1,1.1);
+}
+.main .ventas .mueble img{
+  width: 100%;
+  vertical-align: top;
+}
+.main .ventas .mueble p{
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  padding: 15px 0;
+  font-family: WalterTurncoat;
+}
+footer{
+  width: 100%;
+  margin-top: 50px;
+}
+footer .redes{
+  background: #883955;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px 5px;
+}
+footer .redes a{
+  font-size: 35px;
+  color: #fff;
+  transition: all .5s ease;
+}
+footer .redes .facebook:hover{
+  transform: scale(1.3,1.3);
+  color: #3b5998;
+}
+footer .redes .twitter:hover{
+  transform: scale(1.3,1.3);
+  color: #0099ff;
+}
+footer .redes .mail:hover{
+  transform: scale(1.3,1.3);
+  color: #ff0000;
+}
+footer .redes .instagram:hover{
+  transform: scale(1.3,1.3);
+  color: #ff4d80;
+}
+footer .redes .tel:hover{
+  transform: scale(1.3,1.3);
+  color: #339933;
+}

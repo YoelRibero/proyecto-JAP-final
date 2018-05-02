@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bienvenido a JOSAJU!</title>
+    <link rel="stylesheet" href="misestilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/font-awesome.min.css">
+    <link href="https://file.myfontastic.com/Dp5Ny2iN9NZNpuoJMw5HRU/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i|Roboto" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+  </head>
+  <body>
+    <header class="header fixed" id="header">
+      <div class="contenedor">
+        <h1 class="titulo"><b>YOSAJU</b></h1>
+        <span class="icon-lista" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+          <ul class="menu" id="menu">
+            <li class="menu-item"><a href="javascript:desplegaring('visible')" class="menu-link" id="ingreg">Ingresa</a></li>
+            <li class="menu-item"><a href="javascript:desplegar('visible');" class="menu-link" id="ingreg">Registrate</a></li>
+            <li class="menu-itemfav"><a href="#" class="menu-link"><i class="fa fa-star-o"></i>Favoritos</a></li>
+          </ul>
+        </nav>
+        <div class="buscador">
+          <input type="search" placeholder="Buscar..." id="inputBusqueda">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>          
+      </div>
+
+      <div class="buscar" id="buscar">
+        <table class="buscar-tabla" id="buscarTabla">
+          <thead>
+            <tr>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="../Categorías/Casas/Casas.html">Casas</a></td>
+            </tr>
+            <tr>
+              <td><a href="../Categorías/Automovilismo/Automovilismo.html">Autos</a></td>
+            </tr>
+            <tr>
+              <td><a href="../Categorías/Tecnología/Tecnologia.html">Tecnología</a></td>
+            </tr>
+            <tr>
+              <td><a href="../Categorías/Automovilismo/Automovilismo.html">Volkswaguen</a></td>
+            </tr>
+            <tr>
+              <td><a href="../Categorías/Tecnología/Tecnologia.html">Computadoras</a></td>
+            </tr>
+            <tr>
+              <td><a href="../Categorías/Tecnología/Tecnologia.html">Notebooks</a></td>
+            </tr>
+            <tr>
+              <td><a href="../Categorías/Automovilismo/Automovilismo.html">Fiat</a></td>
+            </tr>
+            <tr>
+              <td><a href="../Categorías/Tecnología/Tecnologia.html">Notebook Hp 4gb RAM</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="img/banner.jpeg" class="banner-img">
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="ventana" id="ventana">
+        <a href="javascript:desplegar('hidden');" class="cerrar">Cerrar</a>
+        <form class="formulario">
+            <h2 class="titreg">Regístrate!</h2>
+            <input type="text" id="guarnombre" class="formulario-input" placeholder="&#128272; Nombre" name="nombre" required>
+            <input type="text" id="guarapellido" class="formulario-input" placeholder="&#128272; Apellido" name="apellido" required>
+            <input type="email" id="guarmail" class="formulario-input" placeholder="&#128272; E-mail" name="mail" required>
+            <input type="number" id="guartel" class="formulario-input" placeholder="&#128272; Teléfono (Fijo o Móvil)" name="tel" required>
+            <input type="password" id="guarcontraseña" class="formulario-input"placeholder="&#128272; Contraseña" name="contraseña" required>
+            <button onclick="guardarDatos()" id="boton-id" class="boton-reg">Regístrate</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="modaling">
+      <div class="ventana" id="ventana">
+        <a href="javascript:desplegaring('hidden');" class="cerrar">Cerrar</a>
+        <form class="formulario">
+            <h2 class="titreg">Bienvenido! Ingresa Aquí</h2>
+            <input type="email" class="formulario-input" placeholder="&#128272; E-mail" name="mail" id="logMail" required>
+            <input type="password" class="formulario-input"placeholder="&#128272; Contraseña" name="contraseña" id="logContraseña" required>
+            <button onclick="logearse()" class="boton-reg">Ingresa</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="main">
+      <div class="contenedor">
+        <article class="articulos">
+          <h2 class="titulo">Institucional</h2>
+          <p>YOSAJU es una empresa dedicada a la compra y venta de productos. Las categorías en las cuales nos especializamos son venta y compra de: Casas, Automóviles y Tecnología. Busque que seguramente tenemos lo que necesita, si tiene alguna consulta no dude en contactarnos, nuestras redes sociales son: facebook, twitter, instagram, mail y teléfono.
+            YOSAJU es la manera más fácil de comprar y vender lo que usted quiera.</p>
+        </article>
+        <article class="articulos">
+          <h2 class="titulo">¿Cómo comprar y vender?</h2>
+          <p>Solamente necesita registrarse, introduzca los datos necesarios para loguearse y listo ya podrá comprar y vender lo que usted quiera. Contacte con la persona que usted quiera en el momento que quiera y compre o venda lo que necesite.</p>
+        </article>
+        <section class="ventas" id="categorias">
+          <h2 class="titulo">Categorías</h2>
+          <div class="mueble">
+            <a href="../Categorías/Casas/Casas.html"><img src="Img/1.jpg" alt="Imagen-1" width="300px"></a>
+            <a href="../Categorías/Casas/Casas.html" class="categorias">Casas</a>
+          </div>
+          <div class="mueble">
+            <a href="../Categorías/Automovilismo/Automovilismo.html"><img src="Img/2.jpg" alt="Imagen-2" width="300px"></a>
+            <a href="../Categorías/Automovilismo/Automovilismo.html" class="categorias">Automovilismo</a>
+          </div>
+          <div class="mueble">
+            <a href="../Categorías/Tecnología/Tecnologia.html"><img src="Img/3.jpg" alt="Imagen-3" width="300px"></a>
+            <a href="../Categorías/Tecnología/Tecnologia.html" class="categorias">Tecnología</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    <footer>
+      <div class="redes">
+        <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.google.com.uy/?gws_rd=ssl" class="mail"><i class="fa fa-envelope-o"></i></a>
+        <a href="https://www.instagram.com/?hl=es-la" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="tel"><i class="fa fa-phone"></i></a>
+      </div>  
+    </footer>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/proyecto JAP.js"></script>
+    <script src="js/guardardatos.js"></script>
+    
+  </body>
+</html>

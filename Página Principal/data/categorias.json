@@ -1,0 +1,19 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Casas",
+      "imagen": "1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre":"Automovilismo",
+      "imagen": "2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Tecnología",
+      "imagen": "3.jpg"
+    }
+  ]
+}
